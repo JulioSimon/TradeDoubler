@@ -35,7 +35,7 @@
 	GitHub:	https://github.com/JulioSimon
 */
 
-namespace ApaiIO\Common;
+//namespace <YourSpace>;
 
 class TradeDoublerPOAPI {
 	
