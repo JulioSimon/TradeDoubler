@@ -142,11 +142,11 @@ class TradeDoublerPOAPI {
 	 *			 (http://dev.tradedoubler.com/products/publisher/#Query_keys)
 	 *
 	 *	@param		array $query_keys	Array with all the input params you want 
-	 *									to use on your product search. If 
-	 *									empty, it will return all the products
-	 *									on the TradeDoubler Database.
+	 *						to use on your product search. If 
+	 *						empty, it will return all the products
+	 *						on the TradeDoubler Database.
 	 *
-	 *	@return		mixed				Xml, json raw data or false boolean
+	 *	@return		mixed			Xml, json raw data or false boolean
 	 */ 
 	public function searchService(array $query_keys){
 		
@@ -248,7 +248,7 @@ class TradeDoublerPOAPI {
 	 *
 	 *	@param		array $query_keys		Service options values
 	 *
-	 *  @return		string					The api request full url
+	 *  	@return		string				The api request full url
 	 */
 	private function urlConstructor(array $query_keys){
 		
@@ -303,30 +303,30 @@ class TradeDoublerPOAPI {
 	}
 	
 	/**
-   * Unserialize json string to array.
-   *
-   * @param      string $json		json string
-   *
-   * @return     mixed			array or false
-   */
-  public function unserializeJson($json){
+	 * Unserialize json string to array.
+   	 *
+   	 * @param      string $json		json string
+   	 *
+   	 * @return     mixed			array or false
+   	 */
+  	public function unserializeJson($json){
     
-    $result = false;
+		$result = false;
     
-    if(function_exists("json_decode")){
+    		if(function_exists("json_decode")){
         
-      $result = json_decode($json, true);
+      			$result = json_decode($json, true);
         	
-      if(!$result){
+      			if(!$result){
 	        	
-	       $result = false;
-	        	
-      }
+	       			$result = false;
+		 	
+      			}
             
-    }
+    		}
 
-    return $result;
-        
-  }
+    		return $result;
+	    
+  	}
 
 }
