@@ -3,7 +3,6 @@ TradeDoubler Php Api
 
 Some php classes to handle requests for the TradeDoubler Affiliation Api, including:
 - TradeDoubler Products Open Api.
-- TradeDoubler Vouchers Open Api.
 
 TradeDoubler Products Open Api
 --------------
@@ -57,8 +56,3 @@ $data = $api->unserializeJson($response);
 $data will contain an array with the parsed json response.
 
 > Remember that you can find all the query_keys available at the api documentation.
-
-TradeDoubler Vouchers Open Api
---------------
-
-> Under construction
